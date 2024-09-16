@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_basic_components_items",
+  "info": {
+    "displayName": "items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Industry",
+        "Need",
+        "Organization Size"
+      ]
+    },
+    "Text": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

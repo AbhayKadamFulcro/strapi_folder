@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_basic_components_success_stories",
+  "info": {
+    "displayName": "SuccessStories",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "VideoThumbDesktop": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ClientLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "VideoEmbededLink": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "ShortIntro": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

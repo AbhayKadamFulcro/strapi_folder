@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_basic_components_overviews",
+  "info": {
+    "displayName": "Overviews",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "OverviewTitle": {
+      "type": "string"
+    },
+    "OverviewDescription": {
+      "type": "text"
+    },
+    "ThumbnailAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "ShowBrochureCTA": {
+      "type": "boolean"
+    },
+    "BrochureLink": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "EmbededVideo": {
+      "type": "string"
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ProductBrochure": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

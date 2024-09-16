@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_basic_fields_url_aliases",
+  "info": {
+    "displayName": "url_aliases",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

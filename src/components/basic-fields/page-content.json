@@ -1,0 +1,91 @@
+{
+  "collectionName": "components_basic_fields_page_contents",
+  "info": {
+    "displayName": "PageContent",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ArticleImageDesktop": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.thumbnails"
+    },
+    "ArticleImageMobile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.thumbnails"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "SummaryText": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-fields.articles-tags"
+    },
+    "DemoLink": {
+      "type": "string"
+    },
+    "Brochure": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "RelatedProducts": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SubBlogTitle": {
+      "type": "string"
+    },
+    "SubBlogPublished_Date": {
+      "type": "date"
+    },
+    "SubBlogReadingTime": {
+      "type": "string"
+    },
+    "SubBlogDescription": {
+      "type": "string"
+    },
+    "FAQsSchema": {
+      "type": "text"
+    },
+    "FAQs": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ArticleContent": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

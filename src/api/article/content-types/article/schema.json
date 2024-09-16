@@ -12,13 +12,83 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": false
+    "DisplayName": {
+      "type": "string"
     },
-    "description": {
-      "type": "text",
-      "required": false
+    "url": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-fields.url-aliases"
+    },
+    "EnableAMP": {
+      "type": "boolean"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "ShortText": {
+      "type": "text"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ThumbnailDesktop": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.thumbnails"
+    },
+    "ThumbnailMobile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.thumbnails"
+    },
+    "CreatedDate": {
+      "type": "date"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.seo"
+    },
+    "PageContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.page-content"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "articledetail_v2"
+      ]
+    },
+    "ArticleSchema": {
+      "type": "richtext"
+    },
+    "ExcludeFromSitemap": {
+      "type": "boolean"
+    },
+    "PageType": {
+      "type": "enumeration",
+      "enum": [
+        "tw-page-blog-article"
+      ]
+    },
+    "OCEID": {
+      "type": "string"
+    },
+    "UpdatedDate": {
+      "type": "date"
     }
   }
 }

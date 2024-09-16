@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_basic_components_hero_banners",
+  "info": {
+    "displayName": "HeroBanners",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ShortDescription": {
+      "type": "string"
+    },
+    "ShortDescriptionAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "LongDescription": {
+      "type": "text"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "CTALink": {
+      "type": "string"
+    },
+    "ShowWhatsappBtn": {
+      "type": "boolean",
+      "default": false
+    },
+    "VideoLink": {
+      "type": "string"
+    },
+    "DesktopImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.thumbnails"
+    },
+    "MobileImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.thumbnails"
+    }
+  }
+}

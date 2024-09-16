@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_basic_components_fa_qs",
+  "info": {
+    "displayName": "FAQs",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "ShortAnswer": {
+      "type": "string"
+    },
+    "LongAnser": {
+      "type": "text"
+    },
+    "DestinationUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

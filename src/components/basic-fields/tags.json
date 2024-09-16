@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_basic_fields_tags",
+  "info": {
+    "displayName": "tags",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "tags": {
+      "displayName": "articles_tags",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-fields.articles-tags"
+    }
+  }
+}

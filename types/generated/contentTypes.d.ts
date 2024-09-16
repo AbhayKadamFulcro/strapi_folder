@@ -362,6 +362,108 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiArticleArticle extends Schema.CollectionType {
+  collectionName: 'articles';
+  info: {
+    singularName: 'article';
+    pluralName: 'articles';
+    displayName: 'article';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    DisplayName: Attribute.String;
+    url: Attribute.String;
+    aliases: Attribute.Component<'basic-fields.url-aliases', true>;
+    EnableAMP: Attribute.Boolean;
+    Title: Attribute.String;
+    ShortText: Attribute.Text;
+    Icon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    ThumbnailDesktop: Attribute.Component<'basic-fields.thumbnails'>;
+    ThumbnailMobile: Attribute.Component<'basic-fields.thumbnails'>;
+    CreatedDate: Attribute.Date;
+    SEO: Attribute.Component<'basic-fields.seo'>;
+    PageContent: Attribute.Component<'basic-fields.page-content'>;
+    layout: Attribute.Enumeration<['articledetail_v2']>;
+    ArticleSchema: Attribute.RichText;
+    ExcludeFromSitemap: Attribute.Boolean;
+    PageType: Attribute.Enumeration<['tw-page-blog-article']>;
+    OCEID: Attribute.String;
+    UpdatedDate: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::article.article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::article.article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHomepageHomepage extends Schema.SingleType {
+  collectionName: 'homepages';
+  info: {
+    singularName: 'homepage';
+    pluralName: 'homepages';
+    displayName: 'homepage';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    DisplayName: Attribute.String;
+    url: Attribute.String;
+    aliases: Attribute.Component<'basic-fields.url-aliases', true>;
+    EnableAMP: Attribute.Boolean;
+    seo: Attribute.Component<'basic-fields.seo'>;
+    HeroBanners: Attribute.Component<'basic-components.hero-banners', true>;
+    Overviews: Attribute.Component<'basic-components.overviews', true>;
+    OurClients: Attribute.Component<'basic-components.our-clients'>;
+    SolutionItems: Attribute.Component<'basic-components.solution-items', true>;
+    SuccessStories: Attribute.Component<
+      'basic-components.success-stories',
+      true
+    >;
+    Products: Attribute.Component<'basic-components.products', true>;
+    RelatedContents: Attribute.Component<
+      'basic-components.related-contents',
+      true
+    >;
+    FAQs: Attribute.Component<'basic-components.fa-qs', true>;
+    CreatedDate: Attribute.Date;
+    UpdatedDate: Attribute.Date;
+    layout: Attribute.Enumeration<['index']>;
+    PageType: Attribute.Enumeration<['tw_page_home']>;
+    OCEID: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::homepage.homepage',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::homepage.homepage',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -788,68 +890,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiArticleArticle extends Schema.CollectionType {
-  collectionName: 'articles';
-  info: {
-    singularName: 'article';
-    pluralName: 'articles';
-    displayName: 'article';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::article.article',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::article.article',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiHeaderHeader extends Schema.SingleType {
-  collectionName: 'headers';
-  info: {
-    singularName: 'header';
-    pluralName: 'headers';
-    displayName: 'Header';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::header.header',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::header.header',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -860,6 +900,8 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::article.article': ApiArticleArticle;
+      'api::homepage.homepage': ApiHomepageHomepage;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -868,8 +910,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::article.article': ApiArticleArticle;
-      'api::header.header': ApiHeaderHeader;
     }
   }
 }

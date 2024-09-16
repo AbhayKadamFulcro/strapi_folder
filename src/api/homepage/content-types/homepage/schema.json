@@ -1,0 +1,104 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DisplayName": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-fields.url-aliases"
+    },
+    "EnableAMP": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-fields.seo"
+    },
+    "HeroBanners": {
+      "displayName": "HeroBanners",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.hero-banners"
+    },
+    "Overviews": {
+      "displayName": "Overviews",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.overviews"
+    },
+    "OurClients": {
+      "displayName": "OurClients",
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-components.our-clients"
+    },
+    "SolutionItems": {
+      "displayName": "SolutionItems",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.solution-items"
+    },
+    "SuccessStories": {
+      "displayName": "SuccessStories",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.success-stories"
+    },
+    "Products": {
+      "displayName": "Products",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.products"
+    },
+    "RelatedContents": {
+      "displayName": "RelatedContents",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.related-contents"
+    },
+    "FAQs": {
+      "displayName": "FAQs",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.fa-qs"
+    },
+    "CreatedDate": {
+      "type": "date"
+    },
+    "UpdatedDate": {
+      "type": "date"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "index"
+      ]
+    },
+    "PageType": {
+      "type": "enumeration",
+      "enum": [
+        "tw_page_home"
+      ]
+    },
+    "OCEID": {
+      "type": "string"
+    }
+  }
+}

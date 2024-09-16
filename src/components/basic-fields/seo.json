@@ -1,0 +1,72 @@
+{
+  "collectionName": "components_basic_fields_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SEOTitle": {
+      "type": "string"
+    },
+    "SEODescription": {
+      "type": "text"
+    },
+    "SEOCanonical": {
+      "type": "string"
+    },
+    "SEORobots": {
+      "type": "string"
+    },
+    "OGTitle": {
+      "type": "string"
+    },
+    "OGUrl": {
+      "type": "string"
+    },
+    "OGImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "OGType": {
+      "type": "string"
+    },
+    "OGDescription": {
+      "type": "text"
+    },
+    "OGLocale": {
+      "type": "string"
+    },
+    "TwitterTitle": {
+      "type": "string"
+    },
+    "TwitterDescription": {
+      "type": "text"
+    },
+    "TwitterImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SEOKeywords": {
+      "type": "text"
+    },
+    "ExcludeFromSitemap": {
+      "type": "boolean"
+    }
+  }
+}

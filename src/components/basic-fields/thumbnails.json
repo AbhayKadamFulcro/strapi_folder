@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_basic_fields_thumbnails",
+  "info": {
+    "displayName": "thumbnails",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ALTTag": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

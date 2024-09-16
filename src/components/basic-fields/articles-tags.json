@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_basic_fields_articles_tags",
+  "info": {
+    "displayName": "articles_tags",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_basic_components_our_clients",
+  "info": {
+    "displayName": "OurClients",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-fields.thumbnails"
+    }
+  }
+}

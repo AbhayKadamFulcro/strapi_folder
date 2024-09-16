@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_basic_components_products",
+  "info": {
+    "displayName": "Products",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ProductName": {
+      "type": "string"
+    },
+    "ShortIntro": {
+      "type": "string"
+    },
+    "ProductLink": {
+      "type": "string"
+    }
+  }
+}

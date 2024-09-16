@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_basic_components_related_contents",
+  "info": {
+    "displayName": "RelatedContents",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ThumbDesktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ThumbMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Link": {
+      "type": "text"
+    },
+    "CT": {
+      "type": "enumeration",
+      "enum": [
+        "tw-page-infographic",
+        "tw-page-case-study",
+        "tw-page-blog-article",
+        "tw-page-whitepaper"
+      ]
+    }
+  }
+}
